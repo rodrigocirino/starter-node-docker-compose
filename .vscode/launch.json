@@ -1,24 +1,17 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-  //IP 127.0.0.1 OR 0.0.0.0
+  //https://github.com/microsoft/vscode-docs/blob/master/docs/nodejs/nodejs-debugging.md
+  //
+  // Important! Define HOST=0.0.0.0 and PORT=9229 in package.json
+  // Example: nodemon --inspect=0.0.0.0:9229 index.js
+  //
   "version": "0.2.0",
   "configurations": [
     {
       "type": "node",
-      "name": "Attach to Port",
+      "name": "Attach (Host 0.0.0.0 and Port 9229)",
       "request": "attach",
-      "restart": true,
-      "port": 9229
-    },
-    {
-      "type": "node",
-      "name": "Attach to Host and Port",
-      "request": "attach",
-      "restart": true,
-      "address": "0.0.0.0",
-      "port": 9229
+      "port": 9229,
+      "skipFiles": ["<eval>/**", "<node_internals>/**"]
     }
   ]
 }

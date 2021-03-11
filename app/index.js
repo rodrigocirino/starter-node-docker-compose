@@ -26,7 +26,7 @@ app.use(cors(corsOptions));
 
 app.use("/", (req, res) => {
   //res.json("Server is up and running");
-  console.log("Default page is showing.");
+  console.log("Default page is showing.....");
   res.sendFile(path.join(__dirname + "/index.html"));
 });
 
