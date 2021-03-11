@@ -1,4 +1,4 @@
-# Node, Docker and VsCode debugger inspector
+# Node, Docker and VsCode
 
 # Run
 
