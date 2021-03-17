@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #
 #
@@ -6,11 +6,14 @@
 # Mix local node_modules + remote nodeserver
 # --inspect-brk - brk means - stop before client code starting
 #
-rm -rfv app/node_modules ; rm -fv app/package-lock.json ;
-clear
-# sudo pkill node
-docker-compose down
-cd app
+#
+# clean
+find . -name 'node_modules' -exec rm -rfv {} \;
+find . -type f -name "package-lock.json" -exec rm -fv {} \; 
+#
+# install
+cd ./app/
 npm install
-cd ..
+cd ../config-dev/
+# docker-compose down
 docker-compose -f ./docker-compose-dev.yml up --build

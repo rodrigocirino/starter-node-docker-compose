@@ -4,8 +4,8 @@ services:
   nodeapp:
     container_name: nodeapp
     build:
-      context: ./app
-      dockerfile: ../Dockerfile # Dockerfile fora da pasta app
+      context: ../app
+      dockerfile: ../config-prod/Dockerfile # Dockerfile in relation to the app folder
     ports:
       - "8080:8080" # node server http port
       - "9229:9229" # node inspect debug port
@@ -13,9 +13,9 @@ services:
       - app-network
     restart: on-failure
     command: npm run debug
-    # volumes: producao não se usa volumes locais
-    # Nao usar inspect com brk, use apenas assim {nodemon --inspect=0.0.0.0:9229}
-    # sem volumes mapeados não temos diretamente as funcionalidades do nodemon como restart on changes.
+    # volumes: production does not need to use local volumes
+    # In package-json use with or without -brk, so {nodemon --inspect=0.0.0.0:9229}
+    # However, without volumes mapped here, we will not have nodemon features like restart on changes.
 
 networks:
   app-network:

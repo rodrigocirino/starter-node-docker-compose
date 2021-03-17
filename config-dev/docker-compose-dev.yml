@@ -4,8 +4,8 @@ services:
   nodeapp:
     container_name: nodeapp
     build:
-      context: ./app
-      dockerfile: ./dev.Dockerfile # Dockerfile da pasta app
+      context: ../app
+      dockerfile: ../config-dev/dev.Dockerfile # Dockerfile in relation to the app folder
     ports:
       - "8080:8080" # node server http port
       - "9229:9229" # node inspect debug port
@@ -13,7 +13,7 @@ services:
       - app-network
     restart: on-failure
     volumes:
-      - ./app:/usr/src/app # gain a nodemon support
+      - ../app:/usr/src/app # gain a nodemon support
 
 networks:
   app-network:

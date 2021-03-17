@@ -6,6 +6,11 @@
 # Full docker, no local files
 #
 #
-rm -rfv app/node_modules ; rm -fv app/package-lock.json ;
+# clean
+find . -name 'node_modules' -exec rm -rfv {} \;
+find . -type f -name "package-lock.json" -exec rm -fv {} \; 
+#
+# install
+cd ./config-prod/
 docker-compose down
-docker-compose -f ./docker-compose.yml up --build
+docker-compose -f docker-compose.yml up --build
