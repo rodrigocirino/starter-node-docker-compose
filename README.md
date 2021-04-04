@@ -1,4 +1,4 @@
-# Node, Docker, Jest, CI and VsCode
+# Node, Docker, Jest, CI, Eslint and VsCode
 
 ## A template project for initial purposes.
 
