@@ -4,7 +4,8 @@
   "description": "node-debug-docker",
   "main": "index.js",
   "scripts": {
-    "debug": "NODE_ENV=development nodemon --inspect=0.0.0.0:9229 index.js"
+    "debug": "NODE_ENV=development nodemon --inspect=0.0.0.0:9229 index.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "jest": "^26.6.3",
     "nodemon": "^2.0.7"
   }
 }
