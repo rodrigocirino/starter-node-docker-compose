@@ -1,4 +1,4 @@
-# Node, Docker, Jest and VsCode
+# Node, Docker, Jest, CI and VsCode
 
 # Run
 
