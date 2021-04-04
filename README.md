@@ -1,5 +1,7 @@
 # Node, Docker, Jest, CI and VsCode
 
+## A template project for initial purposes.
+
 <!-- Docs : https://docs.github.com/pt/actions/managing-workflow-runs/adding-a-workflow-status-badge -->
 
 [![fluxo de trabalho de exemplo](https://github.com/rodrigocirino/starter-node-docker-compose/actions/workflows/node.js.yml/badge.svg)
