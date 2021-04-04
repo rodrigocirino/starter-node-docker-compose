@@ -2,7 +2,8 @@
 
 <!-- Docs : https://docs.github.com/pt/actions/managing-workflow-runs/adding-a-workflow-status-badge -->
 
-![fluxo de trabalho de exemplo](https://github.com/rodrigocirino/starter-node-docker-compose/actions/workflows/node.js.yml/badge.svg)
+[![fluxo de trabalho de exemplo](https://github.com/rodrigocirino/starter-node-docker-compose/actions/workflows/node.js.yml/badge.svg)
+](https://github.com/rodrigocirino/starter-node-docker-compose/actions)
 
 # Run
 
