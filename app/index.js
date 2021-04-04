@@ -1,10 +1,10 @@
-const express = require("express");
-const cors = require("cors");
-const path = require("path");
-const dotenv = require("dotenv");
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
+const dotenv = require('dotenv');
 
 dotenv.config({
-  path: process.env.NODE_ENV === "development" ? ".env.development" : ".env",
+  path: process.env.NODE_ENV === 'development' ? '.env.development' : '.env',
   debug: true,
 });
 
@@ -16,22 +16,22 @@ app.use(json());
 app.use(urlencoded({ extended: false }));
 
 const corsOptions = {
-  origin: "*",
+  origin: '*',
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
 
-//const router = require("./routes");
-//app.use(router);
+// const router = require("./routes");
+// app.use(router);
 
-app.use("/", (req, res) => {
-  //res.json("Server is up and running");
-  console.log("Default page is showing.....");
-  res.sendFile(path.join(__dirname + "/index.html"));
+app.use('/', (req, res) => {
+  // res.json("Server is up and running");
+  console.log('Default page is showing.....');
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 const port = process.env.PORT || 3000;
-const host = process.env.HOST || "0.0.0.0";
+const host = process.env.HOST || '0.0.0.0';
 app.listen(port, host, () => {
   console.log(`Server running http://${host}:${port}`);
 });

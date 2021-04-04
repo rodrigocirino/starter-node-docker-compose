@@ -1,8 +1,8 @@
-const User = require("./User");
+const User = require('./User');
 
 function createUser(name, age) {
-  console.log("Running REAL function");
-  let user = new User(name, age);
+  console.log('Running REAL function');
+  const user = new User(name, age);
   return user;
 }
 

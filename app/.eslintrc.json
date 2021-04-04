@@ -1,0 +1,18 @@
+//https://eslint.org/docs/rules/
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": ["standard", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 12
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "plugins": ["prettier"],
+  "ignorePatterns": ["**/__tests__/", "**/__mocks__/"]
+}
