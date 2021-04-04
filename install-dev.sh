@@ -1,5 +1,7 @@
 #!/bin/sh
 
+printf "\n........... Exiting script%s ............\n" \ $0
+
 #
 #
 # Docker-compose + Dockerfile configuration
@@ -8,7 +10,7 @@
 #
 #
 # clean
-find . -name 'node_modules' -exec rm -rfv {} \;
+find . -name 'node_modules' -exec rm -rf {} \;
 find . -type f -name "package-lock.json" -exec rm -fv {} \; 
 #
 # install

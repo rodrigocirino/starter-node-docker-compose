@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+
+printf "\n........... Starting script%s ............\n" \ $0
 
 #
 #
@@ -7,7 +9,7 @@
 #
 #
 # clean
-find . -name 'node_modules' -exec rm -rfv {} \;
+find . -name 'node_modules' -exec rm -rf {} \;
 find . -type f -name "package-lock.json" -exec rm -fv {} \; 
 #
 # install
