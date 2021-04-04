@@ -1,4 +1,4 @@
-# Node, Docker and VsCode
+# Node, Docker, Jest and VsCode
 
 # Run
 
@@ -8,13 +8,13 @@
 $ ./install-dev.sh
 
 
-# Run in production mode
+# Run in production mode, withoud nodemon support
 $ ./install.sh
 
 ```
 
 ### Vscode for remote docker images
 
-Debug vscode via loaded scripts in vscode.
+Debug a Docker Containers Node in VsCode with **loaded scripts**, on debug tab.
 
 ![screenshot.png](./config-dev/screenshot.png)
