@@ -36,7 +36,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Build and Run
-        working-directory: ./app
+        - working-directory: ./app
         - run: node --version 
         - run: ls -la
         - run: npm ci --if-present
