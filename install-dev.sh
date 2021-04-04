@@ -16,6 +16,8 @@ find . -type f -name "package-lock.json" -exec rm -fv {} \;
 # install
 cd ./app/
 npm install
+npm run lint
+npm t
 cd ../config-dev/
 # docker-compose down
 docker-compose -f ./docker-compose-dev.yml up --build
