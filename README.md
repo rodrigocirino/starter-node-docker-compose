@@ -3,8 +3,6 @@
 <!-- Docs : https://docs.github.com/pt/actions/managing-workflow-runs/adding-a-workflow-status-badge -->
 
 ![fluxo de trabalho de exemplo](https://github.com/rodrigocirino/starter-node-docker-compose/actions/workflows/node.js.yml/badge.svg)
-![example branch parameter](https://github.com/rodrigocirino/starter-node-docker-compose/actions/workflows/node.js.yml/badge.svg?branch=feature-1)
-![example event parameter](https://github.com/rodrigocirino/starter-node-docker-compose/actions/workflows/node.js.yml/badge.svg?event=pull_request)
 
 # Run
 
