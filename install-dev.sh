@@ -1,6 +1,6 @@
 #!/bin/sh
 
-printf "\n........... Exiting script%s ............\n" \ $0
+printf "\n........... Starting script%s ............\n" \ $0
 
 #
 #
