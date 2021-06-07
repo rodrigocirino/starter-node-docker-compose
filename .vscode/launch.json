@@ -2,16 +2,25 @@
   //https://github.com/microsoft/vscode-docs/blob/master/docs/nodejs/nodejs-debugging.md
   //
   // Important! Define HOST=0.0.0.0 and PORT=9229 in package.json
-  // Example: nodemon --inspect=0.0.0.0:9229 index.js
+  // Example: "start:debug": "nodemon --inspect=0.0.0.0:9229 index.js"
   //
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Node Attach",
       "type": "node",
-      "name": "Attach (Host 0.0.0.0 and Port 9229)",
       "request": "attach",
       "port": 9229,
-      "skipFiles": ["<eval>/**", "<node_internals>/**"]
+      "localRoot": "${workspaceFolder}",
+      "restart": true,
+      "skipFiles": [
+        "<eval>/**",
+        "<node_internals>/**",
+        "!**/node_modules/**",
+        "!**/node_modules/@nestjs/**",
+        "${workspaceFolder}/node_modules/**/*.js",
+        "${workspaceFolder}/lib/**/*.js"
+      ]
     }
   ]
 }
